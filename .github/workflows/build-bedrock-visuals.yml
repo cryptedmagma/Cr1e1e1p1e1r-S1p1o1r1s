@@ -1,0 +1,37 @@
+name: Validate and build Creeper Spores Bedrock add-on
+
+on:
+  push:
+    branches:
+      - main
+      - feat/creeper-reference-visual-refinements
+    paths:
+      - 'Creeper_Spores_0.8.30/source/**'
+      - 'Creeper_Spores_0.8.30/build_from_checkout.py'
+      - '.github/workflows/build-bedrock-visuals.yml'
+  pull_request:
+    paths:
+      - 'Creeper_Spores_0.8.30/source/**'
+      - 'Creeper_Spores_0.8.30/build_from_checkout.py'
+      - '.github/workflows/build-bedrock-visuals.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate the 23 Creepers and build both Bedrock packs
+        run: python3 Creeper_Spores_0.8.30/build_from_checkout.py
+      - name: Publish installable Bedrock add-on
+        uses: actions/upload-artifact@v4
+        with:
+          name: Creeper-Spores-Refined-Bedrock
+          path: |
+            Creeper_Spores_0.8.30/dist/*.mcaddon
+            Creeper_Spores_0.8.30/dist/*.mcpack
+          if-no-files-found: error
+          retention-days: 14
