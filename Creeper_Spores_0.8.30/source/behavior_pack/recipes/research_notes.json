@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cookiedookie:recipe_research_notes"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " P ",
+      " E ",
+      " P "
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:paper"
+      },
+      "E": {
+        "item": "cookiedookie:spore_extract"
+      }
+    },
+    "result": {
+      "item": "cookiedookie:research_notes",
+      "count": 1
+    }
+  }
+}

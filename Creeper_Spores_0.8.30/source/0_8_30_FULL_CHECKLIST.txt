@@ -1,0 +1,57 @@
+CREEPER SPORES — FULL DEVELOPMENT CHECKLIST
+Current package: 0.8.30
+Status date: 2026-11-19
+
+Status key: DONE = supported by current files/tests; PARTIAL = implemented in part; PENDING = not completed; UNTESTED = requires Minecraft runtime evidence.
+
+1. Back up original project files — DONE
+   Baseline copies of the 0.7 and 0.8 project trees are retained in work/creeper-spores/baseline_07 and baseline_08. New work uses separate versioned source folders.
+
+2. Preserve 23 creepers, artwork, entity IDs, and existing features — PARTIAL
+   All 23 stable IDs, entity definitions, reference images, and mapped art are in the current package; offline checks validate the mappings and reference PNG hashes. I also compared the 23 PNGs in C:\Users\crypt\Desktop\creeper loooks with the source references: all 23 files are byte-identical. 0.8.30 carries the crystal model fix that places crystals on all four feet and tilts several shards outward. Exact in-game visual parity and full preservation of every original feature are still unverified in Bedrock.
+
+3. Finish specialized AI, movements, attacks, and animations — PARTIAL
+   All 23 entities now have individually tuned player-alert distances, fuse trigger/cancel distances, idle-roaming speeds, pursuit speeds, custom environmental profiles, blast effects, and ambient animations. 0.8.30 adds regression coverage for these settings. Full unique target selection/tactical combat and runtime movement/animation tests remain incomplete.
+
+4. Improve airborne spores, water currents, rain, and environmental spreading — PARTIAL
+   Airborne particle carriers, water/rain/wind routes, and transport options exist. Wind/current/runoff are approximations; edge cases, real-world flow behavior, and runtime spread remain unverified.
+
+5. Expand hybrid plants, infected terrain, mob interactions, and colonies — PARTIAL
+   Three hybrid plants, optional reversible terrain infection, connected colony discovery/cooperation, and 21 named mob-reaction species are present. Mature unlike hybrid plants now persist a cross-pollinated state and grant a one-time extra harvest item. Full crop ecology, genetic hybrid breeding, withering, persistent world-spanning coordination, and all species interactions remain incomplete or untested.
+
+6. Finish spore nests, world generation, quests, and research — PARTIAL
+   Three scripted micro-ruin layouts, an optional native feature-rule pack covering 12 biome tags, a ten-chapter two-path Field Story, and journal research are included. Guaranteed placement in every requested biome, fuller authored structures/dialogue, and all runtime quest/worldgen tests remain incomplete.
+
+7. Improve items, crafting, trading, armor, and redstone automation — PARTIAL
+   Custom items, recipes, controllers, incubators, and a separate researcher trader exist. Four Spore-Proof armor attachables and UV-aligned layer textures are now in the source/package; their appearance while equipped is UNTESTED in Minecraft. Vanilla villager profession trades, large industrial redstone factories and several final item models remain incomplete; the Spore Controller has an extract-fed Auto Seed mode, which is offline-tested but not runtime-tested.
+
+8. Preserve lightweight infection visuals with NO attached spore bud — DONE IN SOURCE
+   Carrier visuals remain cosmetic and do not attach a spore bud or replace the mob skin. Runtime visual review is still pending.
+
+9. Preserve stage-1 pickup, 15-block/40% drip, 20-block final drop, and death-drop rules — IMPLEMENTED; RUNTIME UNTESTED
+   Current defaults/migration preserve these values and behaviors in source. Offline checks cover relevant logic; actual in-game pickup, travel, persistence, and death-drop behavior need testing.
+
+10. Repair invalid Bedrock APIs, JSON, scripts, models, and resource references — PARTIAL
+    Current JSON parses; JavaScript syntax/import paths, manifests, resource links, and asset mappings pass offline checks. Bedrock content logs and actual runtime API compatibility for 0.8.30 have not been checked. The 0.8.30 suite also checks four armor attachables, their item bindings, layer textures, and render setup offline, plus exact texture wiring for all 64 spore strain/stage combinations, Auto Seed controller schema/dispatch, and Crystal Creeper geometry; mocked checks cover extract consumption, strain retention, barrier rejection, missing input/no colony, and the corrected right-foot crystals/outward shards, and ten Phantom wing segments with mirrored rotation data.
+
+11. Package an updated installable .mcaddon — DONE
+    0.8.30_Expanded.mcaddon contains separate behavior and resource .mcpack files with matching 0.8.30 manifests, including the armor attachables/textures, larger stage-3 explosion seeds, and extract-fed Auto Seed mode. Optional worldgen is packaged separately.
+
+12. Test in actual Minecraft Bedrock using a disposable world — UNTESTED FOR 0.8.30
+    A historical 0.8.1 smoke test imported the journal and summoned a custom creeper. It does not verify current releases. The current 0.8.30 package has not been imported into Minecraft and no world was changed during this update.
+
+13. Run offline validation and regression tests — DONE FOR 0.8.30
+    The current suite passes 1,379 offline/mock checks, including mocks of live spore inspection, mature cross-pollination, bounded pollination scan frequency/cache size, and the larger age-3 blast model. These do not substitute for Bedrock gameplay tests.
+
+14. Deliver complete source, add-on, assets, and one-run builder in a ZIP — DONE FOR 0.8.30
+    COMPLETE_EVERYTHING.zip includes the installable add-on, source/tests, reference artwork, builder, guides, and optional worldgen pack. The 0.8.30 one-run builder recreated a valid two-pack .mcaddon in a temporary folder.
+
+15. Provide a complete missing/incomplete/untested checklist — DONE
+    This file and 0.8.30_BEDROCK_TESTS.txt document outstanding work and the 18-item in-game acceptance plan.
+
+CURRENT TOP BLOCKERS / REMAINING TESTS
+- Import and activate 0.8.30 in Minecraft, then verify normal/charged Creeper explosions visibly seed at stage 3 and continue growing through stage 4, and all eight spore strains grow; test powered Auto Seed.
+- Use `/scriptevent cs:test_spores`, wait two seconds, then run `/scriptevent cs:inspect_spores`; compare its strain/stage counts again after 30–60 seconds to diagnose any strain that fails to advance.
+- Check content/script logs and all 23 creeper assets/behaviors/animations in-game.
+- Complete all 18 runtime checks in 0.8.30_BEDROCK_TESTS.txt, including migration, multiplayer, mobile/controller, servers/Realms, and extended performance.
+- Continue development on unique Creeper AI, full transport physics, complete plant ecology, authored structures and campaign, trades, industrial automation, and remaining item visuals. Test the worn armor appearance, Auto Seed controller, Crystal Creeper correction, and Phantom Creeper wings in Minecraft.

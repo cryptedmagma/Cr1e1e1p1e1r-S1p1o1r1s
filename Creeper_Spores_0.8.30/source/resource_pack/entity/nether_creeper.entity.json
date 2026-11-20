@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cookiedookie:nether_creeper",
+      "materials": {
+        "default": "creeper"
+      },
+      "textures": {
+        "default": "textures/entity/cookiedookie/nether_creeper",
+        "charged": "textures/entity/cookiedookie/nether_creeper_charged",
+        "alt": "textures/entity/cookiedookie/nether_creeper_alt",
+        "alt_charged": "textures/entity/cookiedookie/nether_creeper_alt_charged"
+      },
+      "geometry": {
+        "default": "geometry.cookiedookie.nether_creeper"
+      },
+      "animations": {
+        "legs": "animation.creeper.legs",
+        "idle_ambient": "animation.cookiedookie.nether.breathing"
+      },
+      "scripts": {
+        "animate": [
+          "legs",
+          "idle_ambient"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cookiedookie_creeper"
+      ],
+      "spawn_egg": {
+        "base_color": "#6a1a22",
+        "overlay_color": "#ff8a30"
+      }
+    }
+  }
+}

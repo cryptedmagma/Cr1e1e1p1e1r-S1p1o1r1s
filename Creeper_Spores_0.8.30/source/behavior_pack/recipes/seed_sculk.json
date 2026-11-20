@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "cookiedookie:recipe_seed_sculk"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "cookiedookie:spore_extract"
+      },
+      {
+        "item": "minecraft:sculk"
+      }
+    ],
+    "result": {
+      "item": "cookiedookie:seed_sculk",
+      "count": 2
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Creeper Spores - Optional Native Surface Nests",
+    "description": "Opt-in Bedrock feature-rule native generation for NEW Overworld chunks. Enable ONLY alongside Creeper Spores 0.8.30; test on backup worlds.",
+    "uuid": "a7d470e9-18b2-45b8-9118-70a22c29a910",
+    "version": [
+      0,
+      8,
+      30
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      130
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "06a2cf0a-52b5-4905-b36a-42115b88fd57",
+      "version": [
+        0,
+        8,
+        25
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "dc81ac58-f523-4bde-949b-714a2d9d083f",
+      "version": [
+        0,
+        8,
+        30
+      ]
+    }
+  ]
+}

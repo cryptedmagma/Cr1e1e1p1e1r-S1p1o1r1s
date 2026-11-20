@@ -1,0 +1,65 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "cookiedookie.pod_pop": {
+      "category": "neutral",
+      "max_distance": 24,
+      "sounds": [
+        {
+          "name": "sounds/cookiedookie/pod_pop",
+          "volume": 0.9
+        }
+      ]
+    },
+    "cookiedookie.rustle": {
+      "category": "neutral",
+      "max_distance": 24,
+      "sounds": [
+        {
+          "name": "sounds/cookiedookie/rustle",
+          "volume": 0.9
+        }
+      ]
+    },
+    "cookiedookie.rumble": {
+      "category": "neutral",
+      "max_distance": 24,
+      "sounds": [
+        {
+          "name": "sounds/cookiedookie/rumble",
+          "volume": 0.9
+        }
+      ]
+    },
+    "cookiedookie.hiss": {
+      "category": "neutral",
+      "max_distance": 24,
+      "sounds": [
+        {
+          "name": "sounds/cookiedookie/hiss",
+          "volume": 0.9
+        }
+      ]
+    },
+    "cookiedookie.bubble": {
+      "category": "neutral",
+      "max_distance": 24,
+      "sounds": [
+        {
+          "name": "sounds/cookiedookie/bubble",
+          "volume": 0.9
+        }
+      ]
+    },
+    "cookiedookie.sting": {
+      "category": "neutral",
+      "max_distance": 0,
+      "sounds": [
+        {
+          "name": "sounds/cookiedookie/sting",
+          "volume": 0.9
+        }
+      ]
+    }
+  }
+}

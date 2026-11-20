@@ -1,0 +1,163 @@
+{
+  "01_Moss_Creeper.png": {
+    "entity_key": "moss",
+    "sha256": "fad4dca4b0784deb2cee0d914a969be92664354534f468554d5322d4ef0413cd",
+    "entity_json": "entity/moss_creeper.entity.json",
+    "geometry": "models/entity/moss_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/moss_creeper.png"
+  },
+  "02_Cave_Creeper.png": {
+    "entity_key": "cave",
+    "sha256": "4458980259e15dfc176a5bbb63cc5b15bc9c17d64e9b7d353120a1be9045ba9a",
+    "entity_json": "entity/cave_creeper.entity.json",
+    "geometry": "models/entity/cave_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/cave_creeper.png"
+  },
+  "03_Crystal_Creeper.png": {
+    "entity_key": "crystal",
+    "sha256": "3867d654bdaf65b910dd851d10986864d998d12d64586bdc58066419b9369b65",
+    "entity_json": "entity/crystal_creeper.entity.json",
+    "geometry": "models/entity/crystal_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/crystal_creeper.png"
+  },
+  "04_Swamp_Creeper.png": {
+    "entity_key": "swamp",
+    "sha256": "96abede168ad46603b74a37e94cac7f5842ffc945fb32fa696c4b9a454932a4b",
+    "entity_json": "entity/swamp_creeper.entity.json",
+    "geometry": "models/entity/swamp_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/swamp_creeper.png"
+  },
+  "05_Desert_Creeper.png": {
+    "entity_key": "desert",
+    "sha256": "0ec747e122846edbeb217510d568cd137ed1d7aa07499f3d4560064d79c18a4d",
+    "entity_json": "entity/desert_creeper.entity.json",
+    "geometry": "models/entity/desert_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/desert_creeper.png"
+  },
+  "06_Snow_Creeper.png": {
+    "entity_key": "snow",
+    "sha256": "da5720c4f5e81df42731a3b09917f91b12ceb2953842cc5cd09db49b6d4c3946",
+    "entity_json": "entity/snow_creeper.entity.json",
+    "geometry": "models/entity/snow_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/snow_creeper.png"
+  },
+  "07_Jungle_Creeper.png": {
+    "entity_key": "jungle",
+    "sha256": "a742b3bba379dbe3945c1dbb8239fce6aad27cec3ad28b6ace1629c9c741837b",
+    "entity_json": "entity/jungle_creeper.entity.json",
+    "geometry": "models/entity/jungle_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/jungle_creeper.png"
+  },
+  "08_Mushroom_Creeper.png": {
+    "entity_key": "mushroom",
+    "sha256": "c55dee420ff4395588d04d2a395da86d9e30ed38e36b2c4ca2f31b7e43e8bdcb",
+    "entity_json": "entity/mushroom_creeper.entity.json",
+    "geometry": "models/entity/mushroom_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/mushroom_creeper.png"
+  },
+  "09_Sculk_Creeper.png": {
+    "entity_key": "sculk",
+    "sha256": "31b0a291fe69f7d56b3d5bc3edefdad66fbd31c9d246a41e3b269984446bcd9d",
+    "entity_json": "entity/sculk_creeper.entity.json",
+    "geometry": "models/entity/sculk_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/sculk_creeper.png"
+  },
+  "10_Nether_Creeper.png": {
+    "entity_key": "nether",
+    "sha256": "1da7f79ac5f7e0a028f16e79398dd329b18bb0b3a017cfe31756034d46752cea",
+    "entity_json": "entity/nether_creeper.entity.json",
+    "geometry": "models/entity/nether_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/nether_creeper.png"
+  },
+  "11_End_Creeper.png": {
+    "entity_key": "end",
+    "sha256": "e914446215c8c08ecca761f6831870c236ee6b92d07fe8ef50b3f18a54c2d6ad",
+    "entity_json": "entity/end_creeper.entity.json",
+    "geometry": "models/entity/end_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/end_creeper.png"
+  },
+  "12_Water_Creeper.png": {
+    "entity_key": "water",
+    "sha256": "298bd95b272cdc94d4acf314fd5aa61b483839a728622d9ec63e689c8f2e5166",
+    "entity_json": "entity/water_creeper.entity.json",
+    "geometry": "models/entity/water_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/water_creeper.png"
+  },
+  "13_Lava_Creeper.png": {
+    "entity_key": "lava",
+    "sha256": "714f60b37552e5afc58f9a5df0f383330fe818a4eea66712f854149cac535d18",
+    "entity_json": "entity/lava_creeper.entity.json",
+    "geometry": "models/entity/lava_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/lava_creeper.png"
+  },
+  "14_Flower_Creeper.png": {
+    "entity_key": "flower",
+    "sha256": "bad4683d66e443235e37dfb24bef2bda13b9f9e1b052868718413fe9754738fc",
+    "entity_json": "entity/flower_creeper.entity.json",
+    "geometry": "models/entity/flower_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/flower_creeper.png"
+  },
+  "15_Thorn_Creeper.png": {
+    "entity_key": "thorn",
+    "sha256": "6c9f8854d8ba10c26d94a10ba3db5899b7e891fe554fab816a29e5aafa6a2de6",
+    "entity_json": "entity/thorn_creeper.entity.json",
+    "geometry": "models/entity/thorn_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/thorn_creeper.png"
+  },
+  "16_Phantom_Creeper.png": {
+    "entity_key": "phantom",
+    "sha256": "959d47a344482c4fe2e46a604c8701e4a4a6b0ffc02fdcfd92e9706048e49a87",
+    "entity_json": "entity/phantom_creeper.entity.json",
+    "geometry": "models/entity/phantom_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/phantom_creeper.png"
+  },
+  "17_Giant_Creeper.png": {
+    "entity_key": "giant",
+    "sha256": "22e7372e9fd71e04588308317102a3b7334529f9c8bf8679f38953f40e57dab0",
+    "entity_json": "entity/giant_creeper.entity.json",
+    "geometry": "models/entity/giant_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/giant_creeper.png"
+  },
+  "18_Miniature_Creeper.png": {
+    "entity_key": "miniature",
+    "sha256": "dff232cf67fd936f1043b4ddf23480d0decc1fa77e8f74c30262e0eea0bbd1bc",
+    "entity_json": "entity/miniature_creeper.entity.json",
+    "geometry": "models/entity/miniature_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/miniature_creeper.png"
+  },
+  "19_Glowing_Creeper.png": {
+    "entity_key": "glowing",
+    "sha256": "b70e84e09faa9fa13e8f4328ecf259af66c933139eb96032292b4b4dcac3ee83",
+    "entity_json": "entity/glowing_creeper.entity.json",
+    "geometry": "models/entity/glowing_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/glowing_creeper.png"
+  },
+  "20_Spore_Queen_Creeper.png": {
+    "entity_key": "spore_queen",
+    "sha256": "194dd5531376fdb90c97c69d19f0d94291160b939b74edad01802723fea06124",
+    "entity_json": "entity/spore_queen_creeper.entity.json",
+    "geometry": "models/entity/spore_queen_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/spore_queen_creeper.png"
+  },
+  "21_Grass_Crown_Creeper.png": {
+    "entity_key": "grass_crown",
+    "sha256": "448056f360a6a65ca404712eeb5eb80593e63a1ee2105d963e88e3c21006ddb7",
+    "entity_json": "entity/grass_crown_creeper.entity.json",
+    "geometry": "models/entity/grass_crown_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/grass_crown_creeper.png"
+  },
+  "22_Carved_Wood_Creeper.png": {
+    "entity_key": "carved_wood",
+    "sha256": "75d531411a0ca279e3325abff8fea511faf9f874abb17f03b4c25975e2a7d958",
+    "entity_json": "entity/carved_wood_creeper.entity.json",
+    "geometry": "models/entity/carved_wood_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/carved_wood_creeper.png"
+  },
+  "bamboo.png": {
+    "entity_key": "slender_green",
+    "sha256": "587bfccaa4c78c31ad01f8fab465fa90e49f4c362dc3a538bcdbe19842ae6b3f",
+    "entity_json": "entity/slender_green_creeper.entity.json",
+    "geometry": "models/entity/slender_green_creeper.geo.json",
+    "texture": "textures/entity/cookiedookie/slender_green_creeper.png"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "cookiedookie:spore_nest_native"
+    },
+    "places_block": "cookiedookie:spore_nest",
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_replace": [
+      "minecraft:air"
+    ]
+  }
+}

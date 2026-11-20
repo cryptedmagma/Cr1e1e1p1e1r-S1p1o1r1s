@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "cookiedookie:recipe_spore_catalyst"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "cookiedookie:hardened_shell"
+      },
+      {
+        "item": "cookiedookie:volatile_essence"
+      },
+      {
+        "item": "cookiedookie:luminous_shard"
+      }
+    ],
+    "result": {
+      "item": "cookiedookie:spore_catalyst",
+      "count": 1
+    }
+  }
+}

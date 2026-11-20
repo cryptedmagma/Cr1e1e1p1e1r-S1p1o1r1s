@@ -1,0 +1,36 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cookiedookie:spore_trap",
+      "menu_category": {
+        "category": "items"
+      },
+      "states": {
+        "cookiedookie:charges": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cookiedookie:spore_trap",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.6
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 7
+      },
+      "minecraft:map_color": "#436e4f"
+    }
+  }
+}

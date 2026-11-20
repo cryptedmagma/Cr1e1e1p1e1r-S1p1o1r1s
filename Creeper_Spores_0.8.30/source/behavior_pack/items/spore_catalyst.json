@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cookiedookie:spore_catalyst",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "cookiedookie:spore_catalyst"
+        }
+      },
+      "minecraft:custom_components": [
+        "cookiedookie:catalyst"
+      ]
+    }
+  }
+}

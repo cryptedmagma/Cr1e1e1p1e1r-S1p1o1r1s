@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "cookiedookie:recipe_hybrid_marsh_cap"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "cookiedookie:marsh_cap"
+      },
+      {
+        "item": "minecraft:brown_mushroom"
+      }
+    ],
+    "result": {
+      "item": "cookiedookie:spore_pigment",
+      "count": 1
+    }
+  }
+}

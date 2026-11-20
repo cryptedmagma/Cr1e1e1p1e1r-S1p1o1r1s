@@ -1,0 +1,281 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cookiedookie.moss.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.0) * 0.42",
+            "math.sin(query.life_time * 0.70) * 0.70",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.cave.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.2) * 0.57",
+            "math.sin(query.life_time * 0.84) * 0.95",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.crystal.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.4) * 0.72",
+            "math.sin(query.life_time * 0.98) * 1.20",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.swamp.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.6) * 0.87",
+            "math.sin(query.life_time * 1.12) * 1.45",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.desert.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.8) * 1.02",
+            "math.sin(query.life_time * 1.26) * 1.70",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.snow.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.0) * 1.17",
+            "math.sin(query.life_time * 0.70) * 1.95",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.jungle.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.2) * 0.42",
+            "math.sin(query.life_time * 0.84) * 0.70",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.mushroom.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.4) * 0.57",
+            "math.sin(query.life_time * 0.98) * 0.95",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.sculk.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.6) * 0.72",
+            "math.sin(query.life_time * 1.12) * 1.20",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.nether.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.8) * 0.87",
+            "math.sin(query.life_time * 1.26) * 1.45",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.end.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.0) * 1.02",
+            "math.sin(query.life_time * 0.70) * 1.70",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.water.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.2) * 1.80",
+            "math.sin(query.life_time * 0.84) * 3.00",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.lava.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.4) * 1.80",
+            "math.sin(query.life_time * 0.98) * 3.00",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.flower.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.6) * 0.57",
+            "math.sin(query.life_time * 1.12) * 0.95",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.thorn.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.8) * 0.72",
+            "math.sin(query.life_time * 1.26) * 1.20",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.phantom.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.0) * 1.80",
+            "math.sin(query.life_time * 0.70) * 3.00",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.giant.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.2) * 0.60",
+            "math.sin(query.life_time * 0.84) * 1.00",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.miniature.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.4) * 1.17",
+            "math.sin(query.life_time * 0.98) * 1.95",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.glowing.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.6) * 0.42",
+            "math.sin(query.life_time * 1.12) * 0.70",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.spore_queen.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.8) * 0.60",
+            "math.sin(query.life_time * 1.26) * 1.00",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.grass_crown.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.0) * 0.72",
+            "math.sin(query.life_time * 0.70) * 1.20",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.carved_wood.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.2) * 0.87",
+            "math.sin(query.life_time * 0.84) * 1.45",
+            0
+          ]
+        }
+      }
+    },
+    "animation.cookiedookie.slender_green.breathing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(query.life_time * 1.4) * 1.02",
+            "math.sin(query.life_time * 0.98) * 1.70",
+            0
+          ]
+        }
+      }
+    }
+  }
+}

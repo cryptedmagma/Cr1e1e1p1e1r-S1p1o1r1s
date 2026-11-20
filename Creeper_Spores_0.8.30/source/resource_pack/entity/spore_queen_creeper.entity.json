@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cookiedookie:spore_queen_creeper",
+      "materials": {
+        "default": "creeper"
+      },
+      "textures": {
+        "default": "textures/entity/cookiedookie/spore_queen_creeper",
+        "charged": "textures/entity/cookiedookie/spore_queen_creeper_charged",
+        "alt": "textures/entity/cookiedookie/spore_queen_creeper_alt",
+        "alt_charged": "textures/entity/cookiedookie/spore_queen_creeper_alt_charged"
+      },
+      "geometry": {
+        "default": "geometry.cookiedookie.spore_queen_creeper"
+      },
+      "animations": {
+        "legs": "animation.creeper.legs",
+        "idle_ambient": "animation.cookiedookie.spore_queen.breathing"
+      },
+      "scripts": {
+        "animate": [
+          "legs",
+          "idle_ambient"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cookiedookie_creeper"
+      ],
+      "spawn_egg": {
+        "base_color": "#6a3ab0",
+        "overlay_color": "#ffd24a"
+      }
+    }
+  }
+}

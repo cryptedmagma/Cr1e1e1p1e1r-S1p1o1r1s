@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cookiedookie:spore_shell",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/cookiedookie/spore_shell"
+      },
+      "geometry": {
+        "default": "geometry.cookiedookie.spore_shell"
+      },
+      "animations": {
+        "open": "animation.cookiedookie.spore_shell.open"
+      },
+      "scripts": {
+        "animate": [
+          "open"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cookiedookie_shell"
+      ]
+    }
+  }
+}

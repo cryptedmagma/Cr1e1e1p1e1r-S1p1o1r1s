@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cookiedookie:thorn_creeper",
+      "materials": {
+        "default": "creeper"
+      },
+      "textures": {
+        "default": "textures/entity/cookiedookie/thorn_creeper",
+        "charged": "textures/entity/cookiedookie/thorn_creeper_charged",
+        "alt": "textures/entity/cookiedookie/thorn_creeper_alt",
+        "alt_charged": "textures/entity/cookiedookie/thorn_creeper_alt_charged"
+      },
+      "geometry": {
+        "default": "geometry.cookiedookie.thorn_creeper"
+      },
+      "animations": {
+        "legs": "animation.creeper.legs",
+        "idle_ambient": "animation.cookiedookie.thorn.breathing"
+      },
+      "scripts": {
+        "animate": [
+          "legs",
+          "idle_ambient"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cookiedookie_creeper"
+      ],
+      "spawn_egg": {
+        "base_color": "#4a5028",
+        "overlay_color": "#a05a3a"
+      }
+    }
+  }
+}

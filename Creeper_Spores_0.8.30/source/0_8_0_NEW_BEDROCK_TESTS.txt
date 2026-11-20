@@ -1,0 +1,42 @@
+CREEPER SPORES 0.8.0 - ADDITIONAL IN-GAME ACCEPTANCE TESTS
+These are new tests IN ADDITION TO all previously unrun 0.7.0 Bedrock checks.
+[ ] N01 Import standard .mcaddon with both embedded .mcpack files on Windows Bedrock; confirm no content-log errors.
+[ ] N02 Import standard .mcaddon on mobile Bedrock; verify both packs activate.
+[ ] N03 Upgrade a real 0.7 world with existing all-mob carriers; confirm existing state persists.
+[ ] N04 Load every one of 23 creepers and visually inspect new subtle head ambient animation; leg movement must still work.
+[ ] N05 Confirm 23 models and alternate/charged textures did not regress.
+[ ] N06 Confirm all new switches have intended OFF/ON defaults and preserve configuration after reload.
+[ ] N07 Observe three connected pods within 7 blocks; Colony Map shows one group containing three.
+[ ] N08 Add a pod >7 blocks away; confirm it appears as a separate group.
+[ ] N09 Remove a bridging pod; network should split after a subsequent loaded scan.
+[ ] N10 Confirm unloaded pods never cause chunk loading while network graph runs.
+[ ] N11 With cooperation OFF, network surveying must never change pod ages.
+[ ] N12 With cooperation ON, at most one eligible pod per scan advances, and no duplicate reward or hatch occurs.
+[ ] N13 With variant ecology OFF, no special self-effects are added.
+[ ] N14 With variant ecology ON, inspect environment-specific self-effects for all 23 named variants; no accidental vanilla mob effects.
+[ ] N15 With hybrid plants OFF, no new hybrid blocks appear around mature pods.
+[ ] N16 With hybrid plants ON, common, luminous and toxic spores can each grow their appropriate custom hybrid.
+[ ] N17 Verify all four stage models for Spore Bluebell, Spore Bracken and Spore Bogcap render and survive reload.
+[ ] N18 Harvest mature hybrids; receive the correct items exactly once, and plant resets to the youngest stage.
+[ ] N19 Craft recipes using the three harvest products, and verify textures/names/stacking.
+[ ] N20 Confirm harvest does not destroy farmland, vanilla crops, or protected/quarantined cells.
+[ ] N21 With field ruins OFF, new scripted ruin structures must not appear.
+[ ] N22 With field ruins ON, only free air above allowed terrain can receive the five-piece micro-ruin.
+[ ] N23 Verify micro-ruins never replace chests, existing constructions, player crops, or pods.
+[ ] N24 Verify nest collection cannot duplicate loot, and structure notes distinguish scripted ruins from detected vanilla structures.
+[ ] N25 Place stone, dirt, logs and moss using a player; when relevant infection is enabled, newly placed and recorded blocks should be spared.
+[ ] N26 Reload world after placing protected blocks; ensure tracking data was saved before quitting.
+[ ] N27 Confirm old player-built blocks (predating this update) are NOT claimed as reliably protected; keep destructive systems OFF unless tested.
+[ ] N28 Earn each of the six new milestones by legitimate actions, saving/reopening between steps.
+[ ] N29 Verify milestones pay rewards only once, including two players using the same survey point.
+[ ] N30 Load a new world with the OPTIONAL worldgen mcpack explicitly enabled; examine newly generated plains/forest/taiga/jungle chunks for rare native nests.
+[ ] N31 On a new world without the optional pack, confirm no added native feature-rule nests.
+[ ] N32 Check that the optional worldgen pack honors world generation pass, valid ground, and actual supported biome tags.
+[ ] N33 Verify the separate core naturalGeneration toggle does not silently disable or enable the optional feature-rule pack.
+[ ] N34 Check missing APIs/custom blocks fail safely with actionable content-log messages.
+[ ] N35 Test large colonies (100+ loaded pods), both protected and unprotected areas, for CPU usage, memory growth, and update stability.
+[ ] N36 Confirm 0.6.4 all-mob infection rules remain: pickup at stage 1, one 40% chance after 15 blocks, final drop after 20 blocks + 40 ticks, death release, and cleaning effects stop.
+[ ] N37 Confirm no attached creeper-head spore bud has reappeared on infected mobs.
+[ ] N38 Test in multiplayer/Realm and with controller input; confirm new hybrid harvest and maps are accessible.
+[ ] N39 Close and reopen the world, examine saved journal, colony atlas, placed-block tracking, switches, and external optional worldgen activation.
+[ ] N40 Perform one-hour active gameplay and inspect the content log for actual runtime exceptions and event conflicts.

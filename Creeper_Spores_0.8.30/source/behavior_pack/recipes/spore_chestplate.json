@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cookiedookie:recipe_spore_chestplate"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "E E",
+      "EEE",
+      "EEE"
+    ],
+    "key": {
+      "E": {
+        "item": "cookiedookie:spore_extract"
+      }
+    },
+    "result": {
+      "item": "cookiedookie:spore_chestplate",
+      "count": 1
+    }
+  }
+}

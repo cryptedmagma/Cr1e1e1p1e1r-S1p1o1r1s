@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cookiedookie:moss_creeper",
+      "materials": {
+        "default": "creeper"
+      },
+      "textures": {
+        "default": "textures/entity/cookiedookie/moss_creeper",
+        "charged": "textures/entity/cookiedookie/moss_creeper_charged",
+        "alt": "textures/entity/cookiedookie/moss_creeper_alt",
+        "alt_charged": "textures/entity/cookiedookie/moss_creeper_alt_charged"
+      },
+      "geometry": {
+        "default": "geometry.cookiedookie.moss_creeper"
+      },
+      "animations": {
+        "legs": "animation.creeper.legs",
+        "idle_ambient": "animation.cookiedookie.moss.breathing"
+      },
+      "scripts": {
+        "animate": [
+          "legs",
+          "idle_ambient"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cookiedookie_creeper"
+      ],
+      "spawn_egg": {
+        "base_color": "#3f7a34",
+        "overlay_color": "#a8d060"
+      }
+    }
+  }
+}

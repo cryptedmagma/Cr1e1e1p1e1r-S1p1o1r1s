@@ -1,0 +1,36 @@
+CREEPER SPORES 0.8.1 — IN-GAME ACCEPTANCE CHECKS
+Use a NEW disposable world only. Do not use active or saved worlds for these checks.
+
+Observed PC runtime smoke test — 2026-11-19
+- Minecraft for Windows 1.26.6501.0 opened a new Creative disposable world with Creeper Spores listed as an active local behavior pack and resource pack.
+- Cheats were enabled only for this disposable world. The expected achievement warning appeared.
+- `/give @s cookiedookie:spore_journal` succeeded; Minecraft reported "You have been given Spore Research Journal * 1".
+- `/summon cookiedookie:slender_green_creeper ~ ~ ~` succeeded; Minecraft reported "Object successfully summoned".
+- The journal's right-click UI, explosion, custom mob model/animation, spreading rates, long-running ecology, and content/script logs were not verified. The PC interaction ended before those checks.
+- The active test world is the disposable world named "Creeper Spores 0.8.1 Disposable Test" (visible name may be truncated in the world-name field). The prior active world was not opened or changed.
+- This is a smoke test, not a pass of the acceptance checks below.
+
+Reference-image check — 2026-11-19
+- The user's `creeper loooks` folder contains 23 concept images; all 23 same-named images are already present in the packaged `05_REFERENCE_ART/All_23_Original_Artworks.zip`.
+- The matching creeper client entities point to dedicated textures and geometries. For example, the Moss Creeper model includes raised moss/flower detail cubes and uses a dedicated moss atlas.
+- Exact visual parity with the concept renders was not verified in-game, and the UV textures were not changed based solely on the 3D renders. The supplied concept images are retained in the complete source package for comparison.
+
+Safe explosion test procedure (not yet run)
+- Use only the disposable test world. The creeper entity JSON exposes `minecraft:start_exploding`, which adds its explosion component group (`fuse_length: 1.5`, `power: 3.0`).
+- To trigger the fuse directly, summon one custom creeper and run `/event entity @e[type=cookiedookie:moss_creeper,c=1] minecraft:start_exploding`. Observe the fuse, explosion, damage, and block griefing in the disposable world. This command has not yet been run.
+
+1. [PASS] The local behavior and resource packs appeared separately and were active on the new disposable world.
+2. [PARTIAL] World loaded and the custom journal item registered; opening the journal UI and checking content/script logs remain unverified.
+3. [PARTIAL] One custom creeper identifier summoned successfully. Carrier pickup, drip/deposit distance and chance, and infected-mob death drops remain untested.
+4. [NOT RUN] Confirm Research Journal > Field Story is available to non-admin players and chapter progress follows sample, strains and hatching.
+5. [NOT RUN] Complete early chapters, choose Garden Path, quit/rejoin, and confirm the choice/progress persists; test one-time XP reward.
+6. [NOT RUN] Repeat in a separate disposable world with Ruin Path; confirm its objectives differ and progress persists.
+7. [NOT RUN] Attempt to re-claim a completed chapter; confirm no duplicate XP.
+8. [NOT RUN] Confirm the 0.8 feature toggles default OFF and that no hybrids, ruins or cooperation change the world until enabled.
+9. [NOT RUN] Enable hybridPlants and inspect growth stages, textures and harvest/regrowth.
+10. [NOT RUN] Enable colonyNetworks and verify the map reports only nearby loaded pods; enable cooperation separately and verify its bounded effect.
+11. [NOT RUN] Enable fieldRuins and verify placement does not overwrite solid blocks, containers, crops or tracked player placements.
+12. [NOT RUN] Test optional native world generation only in a disposable world with newly generated chunks; it is not included or activated by the core .mcaddon.
+13. [NOT RUN] Save, quit, reopen, and check story/player progress and world stability.
+
+Mobile, controller, multiplayer, Realm, dedicated-server, old-world migration, long-session performance and exact visual parity remain separate tests.

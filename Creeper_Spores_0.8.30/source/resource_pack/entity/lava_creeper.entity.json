@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cookiedookie:lava_creeper",
+      "materials": {
+        "default": "creeper"
+      },
+      "textures": {
+        "default": "textures/entity/cookiedookie/lava_creeper",
+        "charged": "textures/entity/cookiedookie/lava_creeper_charged",
+        "alt": "textures/entity/cookiedookie/lava_creeper_alt",
+        "alt_charged": "textures/entity/cookiedookie/lava_creeper_alt_charged"
+      },
+      "geometry": {
+        "default": "geometry.cookiedookie.lava_creeper"
+      },
+      "animations": {
+        "legs": "animation.creeper.legs",
+        "idle_ambient": "animation.cookiedookie.lava.breathing"
+      },
+      "scripts": {
+        "animate": [
+          "legs",
+          "idle_ambient"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cookiedookie_creeper"
+      ],
+      "spawn_egg": {
+        "base_color": "#e07018",
+        "overlay_color": "#ffe060"
+      }
+    }
+  }
+}

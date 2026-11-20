@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cookiedookie:recipe_spore_capsule"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " G ",
+      "GEG",
+      " G "
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "E": {
+        "item": "cookiedookie:spore_extract"
+      }
+    },
+    "result": {
+      "item": "cookiedookie:spore_capsule",
+      "count": 1
+    }
+  }
+}

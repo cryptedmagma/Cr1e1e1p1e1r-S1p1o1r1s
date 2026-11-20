@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cookiedookie:recipe_spore_purifier"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "IBI",
+      "IEI",
+      " I "
+    ],
+    "key": {
+      "E": {
+        "item": "cookiedookie:spore_extract"
+      },
+      "B": {
+        "item": "minecraft:glass_bottle"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "cookiedookie:spore_purifier",
+      "count": 1
+    }
+  }
+}

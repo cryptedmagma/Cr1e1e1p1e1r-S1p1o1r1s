@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cookiedookie:water_creeper",
+      "materials": {
+        "default": "creeper"
+      },
+      "textures": {
+        "default": "textures/entity/cookiedookie/water_creeper",
+        "charged": "textures/entity/cookiedookie/water_creeper_charged",
+        "alt": "textures/entity/cookiedookie/water_creeper_alt",
+        "alt_charged": "textures/entity/cookiedookie/water_creeper_alt_charged"
+      },
+      "geometry": {
+        "default": "geometry.cookiedookie.water_creeper"
+      },
+      "animations": {
+        "legs": "animation.creeper.legs",
+        "idle_ambient": "animation.cookiedookie.water.breathing"
+      },
+      "scripts": {
+        "animate": [
+          "legs",
+          "idle_ambient"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cookiedookie_creeper"
+      ],
+      "spawn_egg": {
+        "base_color": "#1f4f9a",
+        "overlay_color": "#7fd0f0"
+      }
+    }
+  }
+}

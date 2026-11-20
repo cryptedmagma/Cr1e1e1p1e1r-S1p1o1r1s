@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "item": {
+        "cookiedookie:spore_helmet": "query.owner_identifier == 'minecraft:player'"
+      },
+      "materials": {
+        "enchanted": "armor_enchanted",
+        "default": "armor"
+      },
+      "render_controllers": [
+        "controller.render.armor"
+      ],
+      "geometry": {
+        "default": "geometry.player.armor.helmet"
+      },
+      "scripts": {
+        "parent_setup": "variable.helmet_layer_visible = 0.0;"
+      },
+      "identifier": "cookiedookie:spore_helmet.player",
+      "textures": {
+        "enchanted": "textures/misc/enchanted_actor_glint",
+        "default": "textures/models/armor/spore_1"
+      }
+    }
+  }
+}
