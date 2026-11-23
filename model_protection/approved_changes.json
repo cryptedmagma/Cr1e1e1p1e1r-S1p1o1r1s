@@ -1,0 +1,5 @@
+{
+  "schema": "creeper-spores-specific-approvals-v1",
+  "description": "Add only explicit, traceable approvals for exact changed paths/components/conditions. Never infer approval from declined or excluded responses. Human review required; not a substitute for GitHub branch protection.",
+  "approved_changes": []
+}

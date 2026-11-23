@@ -1,0 +1,24 @@
+name: Creeper Spores scoped asset protections
+on:
+  pull_request:
+    paths:
+      - 'Creeper_Spores_0.8.30/source/**'
+      - 'model_protection/**'
+      - '.github/workflows/creeper-protection.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  protect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate source decision registry
+        run: python3 model_protection/inspect.py --verify
+      - name: Check guarded asset changes against explicit approval records
+        if: github.event_name == 'pull_request'
+        run: python3 model_protection/inspect.py --audit-changes "origin/${{ github.base_ref }}"
