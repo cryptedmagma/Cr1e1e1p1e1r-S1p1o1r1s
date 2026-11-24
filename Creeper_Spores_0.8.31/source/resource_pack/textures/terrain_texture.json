@@ -1,0 +1,319 @@
+{
+  "texture_data": {
+    "cookiedookie:creeper_spores": {
+      "textures": "textures/blocks/creeper_spores/creeper_spores"
+    },
+    "cookiedookie:creeper_spores.age_0": {
+      "textures": "textures/blocks/creeper_spores/creeper_spores_age_0"
+    },
+    "cookiedookie:creeper_spores.age_1": {
+      "textures": "textures/blocks/creeper_spores/creeper_spores_age_1"
+    },
+    "cookiedookie:creeper_spores.age_2": {
+      "textures": "textures/blocks/creeper_spores/creeper_spores_age_2"
+    },
+    "cookiedookie:creeper_spores.age_3": {
+      "textures": "textures/blocks/creeper_spores/creeper_spores_age_3"
+    },
+    "cookiedookie:creeper_spores.age_4": {
+      "textures": "textures/blocks/creeper_spores/creeper_spores_age_4"
+    },
+    "cookiedookie:creeper_spores.age_5": {
+      "textures": "textures/blocks/creeper_spores/creeper_spores_age_5"
+    },
+    "cookiedookie:creeper_spores.age_6": {
+      "textures": "textures/blocks/creeper_spores/creeper_spores_age_6"
+    },
+    "cookiedookie:creeper_spores.age_7": {
+      "textures": "textures/blocks/creeper_spores/creeper_spores_age_7"
+    },
+    "cookiedookie:creeper_spores.s1.age_0": {
+      "textures": "textures/blocks/creeper_spores/strain_1/age_0"
+    },
+    "cookiedookie:creeper_spores.s1.age_1": {
+      "textures": "textures/blocks/creeper_spores/strain_1/age_1"
+    },
+    "cookiedookie:creeper_spores.s1.age_2": {
+      "textures": "textures/blocks/creeper_spores/strain_1/age_2"
+    },
+    "cookiedookie:creeper_spores.s1.age_3": {
+      "textures": "textures/blocks/creeper_spores/strain_1/age_3"
+    },
+    "cookiedookie:creeper_spores.s1.age_4": {
+      "textures": "textures/blocks/creeper_spores/strain_1/age_4"
+    },
+    "cookiedookie:creeper_spores.s1.age_5": {
+      "textures": "textures/blocks/creeper_spores/strain_1/age_5"
+    },
+    "cookiedookie:creeper_spores.s1.age_6": {
+      "textures": "textures/blocks/creeper_spores/strain_1/age_6"
+    },
+    "cookiedookie:creeper_spores.s1.age_7": {
+      "textures": "textures/blocks/creeper_spores/strain_1/age_7"
+    },
+    "cookiedookie:creeper_spores.s2.age_0": {
+      "textures": "textures/blocks/creeper_spores/strain_2/age_0"
+    },
+    "cookiedookie:creeper_spores.s2.age_1": {
+      "textures": "textures/blocks/creeper_spores/strain_2/age_1"
+    },
+    "cookiedookie:creeper_spores.s2.age_2": {
+      "textures": "textures/blocks/creeper_spores/strain_2/age_2"
+    },
+    "cookiedookie:creeper_spores.s2.age_3": {
+      "textures": "textures/blocks/creeper_spores/strain_2/age_3"
+    },
+    "cookiedookie:creeper_spores.s2.age_4": {
+      "textures": "textures/blocks/creeper_spores/strain_2/age_4"
+    },
+    "cookiedookie:creeper_spores.s2.age_5": {
+      "textures": "textures/blocks/creeper_spores/strain_2/age_5"
+    },
+    "cookiedookie:creeper_spores.s2.age_6": {
+      "textures": "textures/blocks/creeper_spores/strain_2/age_6"
+    },
+    "cookiedookie:creeper_spores.s2.age_7": {
+      "textures": "textures/blocks/creeper_spores/strain_2/age_7"
+    },
+    "cookiedookie:creeper_spores.s3.age_0": {
+      "textures": "textures/blocks/creeper_spores/strain_3/age_0"
+    },
+    "cookiedookie:creeper_spores.s3.age_1": {
+      "textures": "textures/blocks/creeper_spores/strain_3/age_1"
+    },
+    "cookiedookie:creeper_spores.s3.age_2": {
+      "textures": "textures/blocks/creeper_spores/strain_3/age_2"
+    },
+    "cookiedookie:creeper_spores.s3.age_3": {
+      "textures": "textures/blocks/creeper_spores/strain_3/age_3"
+    },
+    "cookiedookie:creeper_spores.s3.age_4": {
+      "textures": "textures/blocks/creeper_spores/strain_3/age_4"
+    },
+    "cookiedookie:creeper_spores.s3.age_5": {
+      "textures": "textures/blocks/creeper_spores/strain_3/age_5"
+    },
+    "cookiedookie:creeper_spores.s3.age_6": {
+      "textures": "textures/blocks/creeper_spores/strain_3/age_6"
+    },
+    "cookiedookie:creeper_spores.s3.age_7": {
+      "textures": "textures/blocks/creeper_spores/strain_3/age_7"
+    },
+    "cookiedookie:creeper_spores.s4.age_0": {
+      "textures": "textures/blocks/creeper_spores/strain_4/age_0"
+    },
+    "cookiedookie:creeper_spores.s4.age_1": {
+      "textures": "textures/blocks/creeper_spores/strain_4/age_1"
+    },
+    "cookiedookie:creeper_spores.s4.age_2": {
+      "textures": "textures/blocks/creeper_spores/strain_4/age_2"
+    },
+    "cookiedookie:creeper_spores.s4.age_3": {
+      "textures": "textures/blocks/creeper_spores/strain_4/age_3"
+    },
+    "cookiedookie:creeper_spores.s4.age_4": {
+      "textures": "textures/blocks/creeper_spores/strain_4/age_4"
+    },
+    "cookiedookie:creeper_spores.s4.age_5": {
+      "textures": "textures/blocks/creeper_spores/strain_4/age_5"
+    },
+    "cookiedookie:creeper_spores.s4.age_6": {
+      "textures": "textures/blocks/creeper_spores/strain_4/age_6"
+    },
+    "cookiedookie:creeper_spores.s4.age_7": {
+      "textures": "textures/blocks/creeper_spores/strain_4/age_7"
+    },
+    "cookiedookie:creeper_spores.s5.age_0": {
+      "textures": "textures/blocks/creeper_spores/strain_5/age_0"
+    },
+    "cookiedookie:creeper_spores.s5.age_1": {
+      "textures": "textures/blocks/creeper_spores/strain_5/age_1"
+    },
+    "cookiedookie:creeper_spores.s5.age_2": {
+      "textures": "textures/blocks/creeper_spores/strain_5/age_2"
+    },
+    "cookiedookie:creeper_spores.s5.age_3": {
+      "textures": "textures/blocks/creeper_spores/strain_5/age_3"
+    },
+    "cookiedookie:creeper_spores.s5.age_4": {
+      "textures": "textures/blocks/creeper_spores/strain_5/age_4"
+    },
+    "cookiedookie:creeper_spores.s5.age_5": {
+      "textures": "textures/blocks/creeper_spores/strain_5/age_5"
+    },
+    "cookiedookie:creeper_spores.s5.age_6": {
+      "textures": "textures/blocks/creeper_spores/strain_5/age_6"
+    },
+    "cookiedookie:creeper_spores.s5.age_7": {
+      "textures": "textures/blocks/creeper_spores/strain_5/age_7"
+    },
+    "cookiedookie:creeper_spores.s6.age_0": {
+      "textures": "textures/blocks/creeper_spores/strain_6/age_0"
+    },
+    "cookiedookie:creeper_spores.s6.age_1": {
+      "textures": "textures/blocks/creeper_spores/strain_6/age_1"
+    },
+    "cookiedookie:creeper_spores.s6.age_2": {
+      "textures": "textures/blocks/creeper_spores/strain_6/age_2"
+    },
+    "cookiedookie:creeper_spores.s6.age_3": {
+      "textures": "textures/blocks/creeper_spores/strain_6/age_3"
+    },
+    "cookiedookie:creeper_spores.s6.age_4": {
+      "textures": "textures/blocks/creeper_spores/strain_6/age_4"
+    },
+    "cookiedookie:creeper_spores.s6.age_5": {
+      "textures": "textures/blocks/creeper_spores/strain_6/age_5"
+    },
+    "cookiedookie:creeper_spores.s6.age_6": {
+      "textures": "textures/blocks/creeper_spores/strain_6/age_6"
+    },
+    "cookiedookie:creeper_spores.s6.age_7": {
+      "textures": "textures/blocks/creeper_spores/strain_6/age_7"
+    },
+    "cookiedookie:creeper_spores.s7.age_0": {
+      "textures": "textures/blocks/creeper_spores/strain_7/age_0"
+    },
+    "cookiedookie:creeper_spores.s7.age_1": {
+      "textures": "textures/blocks/creeper_spores/strain_7/age_1"
+    },
+    "cookiedookie:creeper_spores.s7.age_2": {
+      "textures": "textures/blocks/creeper_spores/strain_7/age_2"
+    },
+    "cookiedookie:creeper_spores.s7.age_3": {
+      "textures": "textures/blocks/creeper_spores/strain_7/age_3"
+    },
+    "cookiedookie:creeper_spores.s7.age_4": {
+      "textures": "textures/blocks/creeper_spores/strain_7/age_4"
+    },
+    "cookiedookie:creeper_spores.s7.age_5": {
+      "textures": "textures/blocks/creeper_spores/strain_7/age_5"
+    },
+    "cookiedookie:creeper_spores.s7.age_6": {
+      "textures": "textures/blocks/creeper_spores/strain_7/age_6"
+    },
+    "cookiedookie:creeper_spores.s7.age_7": {
+      "textures": "textures/blocks/creeper_spores/strain_7/age_7"
+    },
+    "cookiedookie:spore_controller.m0": {
+      "textures": "textures/blocks/spore_controller/mode_0"
+    },
+    "cookiedookie:spore_controller.m1": {
+      "textures": "textures/blocks/spore_controller/mode_1"
+    },
+    "cookiedookie:spore_controller.m2": {
+      "textures": "textures/blocks/spore_controller/mode_2"
+    },
+    "cookiedookie:infected_grass_block": {
+      "textures": "textures/blocks/infected_grass_block"
+    },
+    "cookiedookie:infected_dirt": {
+      "textures": "textures/blocks/infected_dirt"
+    },
+    "cookiedookie:infected_coarse_dirt": {
+      "textures": "textures/blocks/infected_coarse_dirt"
+    },
+    "cookiedookie:infected_stone": {
+      "textures": "textures/blocks/infected_stone"
+    },
+    "cookiedookie:infected_deepslate": {
+      "textures": "textures/blocks/infected_deepslate"
+    },
+    "cookiedookie:infected_cobblestone": {
+      "textures": "textures/blocks/infected_cobblestone"
+    },
+    "cookiedookie:infected_sand": {
+      "textures": "textures/blocks/infected_sand"
+    },
+    "cookiedookie:infected_red_sand": {
+      "textures": "textures/blocks/infected_red_sand"
+    },
+    "cookiedookie:infected_clay": {
+      "textures": "textures/blocks/infected_clay"
+    },
+    "cookiedookie:infected_moss_block": {
+      "textures": "textures/blocks/infected_moss_block"
+    },
+    "cookiedookie:infected_mud": {
+      "textures": "textures/blocks/infected_mud"
+    },
+    "cookiedookie:infected_netherrack": {
+      "textures": "textures/blocks/infected_netherrack"
+    },
+    "cookiedookie:infected_soul_soil": {
+      "textures": "textures/blocks/infected_soul_soil"
+    },
+    "cookiedookie:spore_nest": {
+      "textures": "textures/blocks/spore_nest"
+    },
+    "cookiedookie:spore_incubator": {
+      "textures": "textures/blocks/spore_incubator"
+    },
+    "cookiedookie:cultivation_table": {
+      "textures": "textures/blocks/cultivation_table"
+    },
+    "cookiedookie:spore_lantern": {
+      "textures": "textures/blocks/spore_lantern"
+    },
+    "cookiedookie:spore_torch": {
+      "textures": "textures/blocks/spore_torch"
+    },
+    "cookiedookie:spore_controller.m3": {
+      "textures": "textures/blocks/spore_controller/auto_harvest"
+    },
+    "cookiedookie:spore_controller.m4": {
+      "textures": "textures/blocks/spore_controller/mode_2"
+    },
+    "cookiedookie:infected_oak_log": {
+      "textures": "textures/blocks/infected_oak_log"
+    },
+    "cookiedookie:infected_spruce_log": {
+      "textures": "textures/blocks/infected_spruce_log"
+    },
+    "cookiedookie:infected_birch_log": {
+      "textures": "textures/blocks/infected_birch_log"
+    },
+    "cookiedookie:infected_oak_leaves": {
+      "textures": "textures/blocks/infected_oak_leaves"
+    },
+    "cookiedookie:infected_oak_planks": {
+      "textures": "textures/blocks/infected_oak_planks"
+    },
+    "cookiedookie:infected_spruce_planks": {
+      "textures": "textures/blocks/infected_spruce_planks"
+    },
+    "cookiedookie:infected_birch_planks": {
+      "textures": "textures/blocks/infected_birch_planks"
+    },
+    "cookiedookie:infected_white_wool": {
+      "textures": "textures/blocks/infected_white_wool"
+    },
+    "cookiedookie:infected_white_concrete": {
+      "textures": "textures/blocks/infected_white_concrete"
+    },
+    "cookiedookie:infected_glass": {
+      "textures": "textures/blocks/infected_glass"
+    },
+    "cookiedookie:infected_ice": {
+      "textures": "textures/blocks/infected_ice"
+    },
+    "cookiedookie:infected_snow": {
+      "textures": "textures/blocks/infected_snow"
+    },
+    "cookiedookie:infected_snow_block": {
+      "textures": "textures/blocks/infected_snow_block"
+    },
+    "cookiedookie:spore_trap": {
+      "textures": "textures/blocks/spore_trap"
+    },
+    "cookiedookie:spore_bluebell": {
+      "textures": "textures/blocks/hybrids/spore_bluebell"
+    },
+    "cookiedookie:spore_bracken": {
+      "textures": "textures/blocks/hybrids/spore_bracken"
+    },
+    "cookiedookie:spore_bogcap": {
+      "textures": "textures/blocks/hybrids/spore_bogcap"
+    }
+  }
+}

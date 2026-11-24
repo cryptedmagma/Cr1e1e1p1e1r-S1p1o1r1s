@@ -1,0 +1,104 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cookiedookie:spore_controller",
+      "menu_category": {
+        "category": "items"
+      },
+      "states": {
+        "cookiedookie:mode": {
+          "values": {
+            "min": 0,
+            "max": 4
+          }
+        },
+        "cookiedookie:powered": [
+          false,
+          true
+        ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('cookiedookie:mode') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cookiedookie:spore_controller.m0",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('cookiedookie:mode') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cookiedookie:spore_controller.m1",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('cookiedookie:mode') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cookiedookie:spore_controller.m2",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('cookiedookie:mode') == 3",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cookiedookie:spore_controller.m3",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('cookiedookie:mode') == 4",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "cookiedookie:spore_controller.m4",
+              "render_method": "opaque"
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "cookiedookie:controller": {},
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cookiedookie:spore_controller.m0",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6
+      },
+      "minecraft:map_color": "#3a3e46",
+      "minecraft:tick": {
+        "interval_range": [
+          5,
+          5
+        ],
+        "looping": true
+      }
+    }
+  }
+}

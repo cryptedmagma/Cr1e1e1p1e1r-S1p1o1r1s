@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cookiedookie:spore_shell",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:collision_box": {
+        "width": 0.01,
+        "height": 0.01
+      },
+      "minecraft:timer": {
+        "time": 1.7,
+        "looping": false,
+        "time_down_event": {
+          "event": "cookiedookie:vanish",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "cookiedookie:vanish": {
+        "remove": {}
+      }
+    }
+  }
+}

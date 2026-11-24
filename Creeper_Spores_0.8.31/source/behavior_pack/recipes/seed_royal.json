@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "cookiedookie:recipe_seed_royal"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "cookiedookie:spore_extract"
+      },
+      {
+        "item": "cookiedookie:spore_catalyst"
+      },
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ],
+    "result": {
+      "item": "cookiedookie:seed_royal",
+      "count": 1
+    }
+  }
+}

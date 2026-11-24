@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cookiedookie:water_creeper",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/cookiedookie/water_creeper",
+        "charged": "textures/entity/cookiedookie/water_creeper_charged",
+        "alt": "textures/entity/cookiedookie/water_creeper_alt",
+        "alt_charged": "textures/entity/cookiedookie/water_creeper_alt_charged"
+      },
+      "geometry": {
+        "default": "geometry.cookiedookie.water_creeper"
+      },
+      "animations": {
+        "legs": "animation.creeper.legs",
+        "idle_ambient": "animation.cookiedookie.water.breathing",
+        "walk_trail": "animation.cookiedookie.walk_trail",
+        "orbit_particles": "animation.cookiedookie.orbit_particles"
+      },
+      "scripts": {
+        "animate": [
+          "legs",
+          "idle_ambient",
+          {
+            "walk_trail": "query.modified_move_speed > 0.05"
+          },
+          "orbit_particles"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cookiedookie_creeper"
+      ],
+      "spawn_egg": {
+        "base_color": "#1f4f9a",
+        "overlay_color": "#7fd0f0"
+      },
+      "particle_effects": {
+        "trail": "cookiedookie:cs_trail_water",
+        "orbit": "cookiedookie:cs_orbit_bubbles"
+      }
+    }
+  }
+}

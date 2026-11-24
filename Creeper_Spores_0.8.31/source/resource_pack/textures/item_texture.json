@@ -1,0 +1,118 @@
+{
+  "texture_data": {
+    "cookiedookie:creeper_spores": {
+      "textures": "textures/blocks/creeper_spores/creeper_spores_age_0"
+    },
+    "cookiedookie:spore_extract": {
+      "textures": "textures/items/spore_extract"
+    },
+    "cookiedookie:luminous_shard": {
+      "textures": "textures/items/luminous_shard"
+    },
+    "cookiedookie:hardened_shell": {
+      "textures": "textures/items/hardened_shell"
+    },
+    "cookiedookie:volatile_essence": {
+      "textures": "textures/items/volatile_essence"
+    },
+    "cookiedookie:spore_catalyst": {
+      "textures": "textures/items/spore_catalyst"
+    },
+    "cookiedookie:spore_scanner": {
+      "textures": "textures/items/spore_scanner"
+    },
+    "cookiedookie:spore_detector": {
+      "textures": "textures/items/spore_detector"
+    },
+    "cookiedookie:spore_collector": {
+      "textures": "textures/items/spore_collector"
+    },
+    "cookiedookie:spore_purifier": {
+      "textures": "textures/items/spore_purifier"
+    },
+    "cookiedookie:spore_journal": {
+      "textures": "textures/items/spore_journal"
+    },
+    "cookiedookie:spore_sprayer": {
+      "textures": "textures/items/spore_sprayer"
+    },
+    "cookiedookie:spore_vacuum": {
+      "textures": "textures/items/spore_vacuum"
+    },
+    "cookiedookie:spore_compass": {
+      "textures": "textures/items/spore_compass"
+    },
+    "cookiedookie:seed_luminous": {
+      "textures": "textures/items/seed_luminous"
+    },
+    "cookiedookie:seed_toxic": {
+      "textures": "textures/items/seed_toxic"
+    },
+    "cookiedookie:seed_frost": {
+      "textures": "textures/items/seed_frost"
+    },
+    "cookiedookie:seed_ember": {
+      "textures": "textures/items/seed_ember"
+    },
+    "cookiedookie:seed_aqua": {
+      "textures": "textures/items/seed_aqua"
+    },
+    "cookiedookie:seed_sculk": {
+      "textures": "textures/items/seed_sculk"
+    },
+    "cookiedookie:seed_royal": {
+      "textures": "textures/items/seed_royal"
+    },
+    "cookiedookie:spore_helmet": {
+      "textures": "textures/items/spore_helmet"
+    },
+    "cookiedookie:spore_chestplate": {
+      "textures": "textures/items/spore_chestplate"
+    },
+    "cookiedookie:spore_leggings": {
+      "textures": "textures/items/spore_leggings"
+    },
+    "cookiedookie:spore_boots": {
+      "textures": "textures/items/spore_boots"
+    },
+    "cookiedookie:spore_grenade": {
+      "textures": "textures/items/spore_grenade"
+    },
+    "cookiedookie:spore_staff": {
+      "textures": "textures/items/spore_staff"
+    },
+    "cookiedookie:spore_jar": {
+      "textures": "textures/items/spore_jar"
+    },
+    "cookiedookie:spore_map": {
+      "textures": "textures/items/spore_map"
+    },
+    "cookiedookie:nest_fragment": {
+      "textures": "textures/items/nest_fragment"
+    },
+    "cookiedookie:spore_capsule": {
+      "textures": "textures/items/spore_capsule"
+    },
+    "cookiedookie:spore_pigment": {
+      "textures": "textures/items/spore_pigment"
+    },
+    "cookiedookie:glowing_thread": {
+      "textures": "textures/items/glowing_thread"
+    },
+    "cookiedookie:fungal_crystal": {
+      "textures": "textures/items/fungal_crystal"
+    },
+    "cookiedookie:research_notes": {
+      "textures": "textures/items/research_notes"
+    },
+    "cookiedookie:luminescent_berry": {
+      "textures": "textures/items/luminescent_berry"
+    },
+    "cookiedookie:fungal_fiber": {
+      "textures": "textures/items/fungal_fiber"
+    },
+    "cookiedookie:marsh_cap": {
+      "textures": "textures/items/marsh_cap"
+    }
+  }
+}

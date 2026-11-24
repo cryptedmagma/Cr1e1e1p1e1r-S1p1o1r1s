@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "cookiedookie:recipe_creeper_spores"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "cookiedookie:spore_extract"
+      },
+      {
+        "item": "minecraft:wheat_seeds"
+      }
+    ],
+    "result": {
+      "item": "cookiedookie:creeper_spores",
+      "count": 2
+    }
+  }
+}

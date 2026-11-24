@@ -1,0 +1,67 @@
+{
+  "format_version": [
+    0,
+    1,
+    0
+  ],
+  "cookiedookie:creeper_spores": {
+    "sound": "grass"
+  },
+  "cookiedookie:spore_controller": {
+    "sound": "metal"
+  },
+  "cookiedookie:infected_grass_block": {
+    "sound": "grass"
+  },
+  "cookiedookie:infected_dirt": {
+    "sound": "grass"
+  },
+  "cookiedookie:infected_coarse_dirt": {
+    "sound": "grass"
+  },
+  "cookiedookie:infected_stone": {
+    "sound": "grass"
+  },
+  "cookiedookie:infected_deepslate": {
+    "sound": "grass"
+  },
+  "cookiedookie:infected_cobblestone": {
+    "sound": "grass"
+  },
+  "cookiedookie:infected_sand": {
+    "sound": "grass"
+  },
+  "cookiedookie:infected_red_sand": {
+    "sound": "grass"
+  },
+  "cookiedookie:infected_clay": {
+    "sound": "grass"
+  },
+  "cookiedookie:infected_moss_block": {
+    "sound": "grass"
+  },
+  "cookiedookie:infected_mud": {
+    "sound": "grass"
+  },
+  "cookiedookie:infected_netherrack": {
+    "sound": "grass"
+  },
+  "cookiedookie:infected_soul_soil": {
+    "sound": "grass"
+  },
+  "cookiedookie:spore_nest": {
+    "sound": "stone"
+  },
+  "cookiedookie:spore_incubator": {
+    "sound": "stone"
+  },
+  "cookiedookie:cultivation_table": {
+    "sound": "wood"
+  },
+  "cookiedookie:spore_lantern": {
+    "sound": "stone"
+  },
+  "cookiedookie:spore_torch": {
+    "sound": "stone"
+  }
+}

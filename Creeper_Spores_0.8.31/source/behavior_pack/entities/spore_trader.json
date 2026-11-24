@@ -1,0 +1,59 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cookiedookie:spore_trader",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "villager",
+          "mob",
+          "spore_trader"
+        ]
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:movement": {
+        "value": 0.26
+      },
+      "minecraft:physics": {},
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:behavior.random_stroll": {
+        "priority": 8,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 8.0,
+        "probability": 0.06
+      },
+      "minecraft:economy_trade_table": {
+        "display_name": "entity.cookiedookie:spore_trader.name",
+        "table": "trading/spore_trader_trades.json",
+        "new_screen": true,
+        "persist_trades": true
+      },
+      "minecraft:behavior.trade_interest": {
+        "priority": 5,
+        "within_radius": 6.0,
+        "interest_time": 45.0,
+        "remove_item_time": 1.0,
+        "carried_item_switch_time": 2.0,
+        "cooldown": 2.0
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+CREEPER SPORES 0.8.31 — STATUS AGAINST THE PROJECT SPECIFICATION
+Minecraft Bedrock Edition. Written 2026-11-22.
+
+HOW TO READ THIS
+Evidence states used below:
+  SOURCE-CHANGED  = the source was edited in 0.8.31.
+  OFFLINE-PASS    = covered by the offline/mocked suite, which passed in a real run (13,660 checks from a clean release extract).
+  PREVIEWED       = rendered in Blockbench 5.2.2 (desktop). This is not Bedrock rendering.
+  UNVERIFIED      = no Minecraft session was run. Nothing in 0.8.31 has been observed in-game.
+  NOT DONE        = no work in 0.8.31.
+  NEEDS DECISION  = blocked on a choice the owner must make.
+No Minecraft import, content log or gameplay test was performed for 0.8.31.
+Mocks and Blockbench previews are not gameplay proof.
+
+DECISION REGISTER APPLIED (consolidated report, 2026-11-22)
+  - Vanilla villager trades: NOT replacing Mojang trade tables, per the register. No vanilla trades added.
+  - Declined proposals were not implemented: new transport/wind physics, per-variant special attacks,
+    unique hatch/attack animations, Grass Crown/Carved Wood/Bamboo AI designs, hybrid expansion bundles,
+    terrain/colony/worldgen expansion bundles. Existing working behaviour was not removed.
+  - Spore-covered village ruin: the four approved safeguards are now enforced for every generated
+    structure block (see 11).
+
+01 PRESERVE ORIGINALS / BACKUPS
+  - All 0.8.1-0.8.30 release files are untouched in the outputs folder. 0.8.31 was built in a separate
+    working copy (_work_0.8.31).
+  - All 23 entity IDs, behavior files, loot tables, and the 23 reference images are unchanged. The
+    reference-image hashes are checked: OFFLINE-PASS.
+  - 0.7.0 baseline FOUND (Desktop/Creeper_Spores_0.7.0_COMPLETE_EVERYTHING.zip). A byte copy is bundled
+    read-only in baselines/, along with the 0.8.30 source ZIP. The tests verify both hashes.
+  - Compared with 0.7.0: 0 files missing, 170 identical, 363 changed (mostly before 0.8.31). The 23
+    reference artworks match the original 0.6.1 artwork set exactly. OFFLINE-PASS.
+  - 285 historical release files (0.7.0, 0.8.0-0.8.30) are hashed in 0_8_31_BASELINE_LEDGER.txt.
+  - MISSING, not recovered: any 0.6.x release, and folders named baseline_07 / baseline_08.
+  - The old check comparing carrier scripts byte-for-byte to 0.7 pointed at a Linux path and never
+    ran; it would have failed on 0.8.30 too. It was replaced with the real baseline checks above.
+
+02 CREEPER VISUALS (all 23)
+  - Every model and texture was rebuilt against its reference image: SOURCE-CHANGED, PREVIEWED.
+    The renders are in Creeper_Spores_0.8.31_ALL_CREEPERS_PREVIEW.png.
+  - Crystal: leaning shard cluster on the head and a crystal on all four feet. Phantom: mirrored
+    ragged wings. OFFLINE-PASS for structure. Exact visual parity is NOT claimed: Flower wreath,
+    Jungle crown, Spore Queen cape and Phantom wings are the furthest from the art.
+  - Redrawn again from the owner's newer pictures (2026-11-22): Water (fully replaced: lily pad hat,
+    water lily, water climbing the legs, glowing stream), Lava (maroon rock, lava-seam network, crown of fire, molten feet), Thorn
+    (tight thorny wreath, slender thorns, draped vines, mossy feet), Carved Wood (three tall carved blocks, tilted collar, split cobblestone feet) and Slender
+    Green (bamboo-block head, pale nodes). SOURCE-CHANGED, PREVIEWED. In-game look UNVERIFIED.
+  - Full redo (owner request, 2026-11-23): Swamp, Crystal, Jungle, Lava, Thorn and Spore Queen rebuilt against the
+    reference art and the concept targets in the owner's protection registry (GitHub model_protection/SCOPED_RULES.md),
+    keeping the protected parts. Thorn head block + face and Spore Queen gown, toes and foot moss are byte-identical
+    to the previous build (OFFLINE-PASS: geometry and every face's pixels compared against creeper_forge/protected/).
+    All six keep the vanilla rig bones/pivots, the 8x8x8 head and the creeper face (OFFLINE-PASS). Each registry
+    feature is its own part (lily_pad/lotus, crystal_crown, canopy, molten_crown, thorn_wreath, cap bones).
+    Previewed with an offline renderer because Blockbench was not running. SOURCE-CHANGED. In-game look UNVERIFIED.
+  - Glow: Cave, Crystal, Sculk, Nether, End, Lava, Water (stream only), Glowing and Spore Queen use
+    entity_emissive_alpha. UNVERIFIED in-game.
+  - Walking trails (user request, 2026-11-22): Water (lily pad trail + about four bubbles that pop in and fade), Glowing (glow
+    motes), Flower (petals), Lava (embers), Mushroom (toadstools), Spore Queen (pink spores). They are
+    client-side particles fired by a looping animation while query.modified_move_speed > 0.05. The
+    replaced model parts were removed. SOURCE-CHANGED, OFFLINE-PASS (every particle reference resolves,
+    UVs match the 88x16 sprite sheet, locators present, trails gated on walking). Blockbench cannot
+    preview the particles: in-game look UNVERIFIED.
+  - Rig bone names are unchanged, so the leg and breathing animations bind as before. No new
+    attack/hatch/death animations: NOT DONE.
+
+03 DISTINCT AI / ATTACKS
+  - The per-variant distances and speeds from 0.8.30 are unchanged (OFFLINE-PASS). No new attack
+    styles, targeting or animations: NOT DONE.
+
+04 SPORE TRANSPORT
+  - NOT DONE in 0.8.31. No mechanism-specific confirmation of the reported wind, water, rain or
+    wall symptoms was possible without a game session.
+
+05 HYBRID PLANTS / TERRAIN / COLONIES
+  - Reported Bogcap defect, found in source: all three hybrids shared one generic shape at every
+    stage, and the 8x2x4 cap piece mapped outside the 16x16 texture, so its faces rendered garbled.
+    Fixed: Bluebell, Bracken and Bogcap now have four distinct stages each, with in-bounds
+    per-face UVs. SOURCE-CHANGED, PREVIEWED, OFFLINE-PASS (UVs inside the texture, parts inside
+    the block, stages grow, three distinct plants). In-game look UNVERIFIED.
+  - Growth timing, harvest yields and cross-pollination code were inspected. They are identical
+    across the three plants and were left unchanged. No separate harvest defect was found in
+    source. If a specific harvest result is still wrong in-game, it needs that observation.
+  - Withering, biome-specific growth and crop interactions: NOT DONE.
+
+06 NESTS / WORLDGEN / STORY / RESEARCH
+  - Placement safeguards (approved): generated structure blocks (micro-ruins, and nests at villages and
+    other generated structures) are written only into empty air outside quarantine, never over
+    containers, crops, farmland or spore pods. Previously the structure-nest placer did not check
+    quarantine at all, and micro-ruins checked only their centre cell. SOURCE-CHANGED, OFFLINE-PASS.
+  - Otherwise NOT DONE in 0.8.31. The ten Field Story chapters, text Colony Map and optional worldgen pack
+    are unchanged.
+
+07 ITEMS / ARMOR / TRADES / AUTOMATION
+  - Spore-Proof armor now has one ability per piece against creeper-blast status effects:
+      Helmet blocks blindness, darkness and nausea. Chestplate blocks poison and hunger.
+      Leggings block slowness. Boots block weakness. Beneficial effects are never blocked.
+    The existing rules are kept: any piece blocks toxic-pod poison, and a full suit cannot carry
+    spores. SOURCE-CHANGED, OFFLINE-PASS (pure rule plus wiring). UNVERIFIED in-game.
+  - Equipped armor appearance: still UNVERIFIED (attachables unchanged from 0.8.30).
+  - Vanilla villager spore trades: NEEDS DECISION. Bedrock cannot append trades to a vanilla
+    profession. The only route replaces that profession's whole trade table with a copy, which
+    removes Mojang's trades if they change in future. The researcher trader is unchanged.
+  - Auto Seed and the controller are unchanged (OFFLINE-PASS from 0.8.30 mocks). New redstone
+    modes: NOT DONE.
+
+08 INFECTION VISUALS
+  - Unchanged from 0.8.30 (cosmetic overlay, no buds, original skins kept). The reported particle
+    density/visibility issues were not reworked: NOT DONE.
+
+09 CARRIERS — reported defects
+  - Reported: infected mobs did not release spores on death, and carrier infection was lost after
+    save/reload. Root causes found in source:
+      a) Mob carriers expired 2400 ticks of ABSOLUTE world time after pickup. Unloaded chunks,
+         time away and a closed world all consumed that window, so carriers were wiped on return
+         and had nothing to release when they died.
+      b) Death deposits accepted only air cells, so dying in grass, flowers or snow dropped an
+         item instead of planting a pod.
+      c) Player carriers lived only in memory, timed against a tick counter that restarts at 0 on
+         every world load, so any reload lost them. Players also never released a spore on death.
+  - Audit additions: spectators never become carriers; failed death releases are logged
+    (mob_spore_death_no_valid_cell, player_spore_death_no_valid_cell); new read-only command
+    /scriptevent cs:carrier shows your own carrier state and nearby infected mobs (strain, blocks
+    walked, carried time, drip state).
+  - Fixes: mob and player carrier windows now count saved ACTIVE ticks (the 2400-tick length is
+    unchanged). Older saved mob carriers keep their old window, then switch. Death deposits may
+    displace soft ground cover; the item fallback remains for blocked ground. Player carrier state
+    is saved on the player and restored on load, and dying while carrying releases the strain
+    nearby (still refused in quarantine zones).
+  - Approved thresholds are unchanged and asserted: 15-block one-time 40% drip that leaves
+    infection active, 20-block final deposit after 40 carried ticks, cleanse after a successful
+    final deposit. SOURCE-CHANGED, OFFLINE-PASS. UNVERIFIED in-game; this needs a save/quit/reopen
+    test on a disposable world.
+
+10 API / MANIFEST / SCRIPTS
+  - All scripts pass node --check, and all JSON parses (OFFLINE-PASS). Script modules still use the
+    "beta" @minecraft/server dependency; no target-engine API check was possible. Content logs:
+    UNVERIFIED.
+
+11 PACKAGING
+  - Behavior, Resources, Expanded.mcaddon and the separate optional worldgen pack were rebuilt at
+    0.8.31 with matching dependency versions. Import into Minecraft: UNVERIFIED.
+
+12 IN-GAME TESTING
+  - None performed for 0.8.31. See 0_8_31_BEDROCK_TESTS.txt for what to check first.
+
+13 OFFLINE SUITE
+  - Real run from a clean extract of the release source ZIP: PASS 13,660 checks (the count changes with the number of model parts checked: 11,614 before the 2026-11-22 Water/Lava/Thorn/Carved Wood/Slender Green redraws, 12,166 after the first pass of them, 11,904 after the second; 13,660 after the 2026-11-23 six-creeper redo, which also added the protected-part checks; an earlier 11,209 figure included one scratch JSON that is not shipped). This includes new regressions for carriers, player carriers,
+    armor abilities, hybrid plant stages, all 23 creeper models, and emissive-material
+    consistency. The old figure of 1,379 is historical.
+
+14 SOURCE AND ONE-RUN RELEASE
+  - The one-run builder is now non-overwriting: it stops if a same-named pack exists with different
+    contents (--replace overrides) and leaves identical packs untouched.
+  - New audit_release_0_8_31.py checks the finished release (artifacts present and intact, pack
+    contents byte-equal to source, no stale members, manifests and dependency UUIDs linked, worldgen
+    separate, COMPLETE bundle identical, clean-extract test run) and writes SHA256SUMS. It was run
+    AFTER packaging the final .mcaddon; see the audit result in the release notes.
+  - Per-variant visual records: 0_8_31_VISUAL_RECORDS.txt plus visual_records/*.png (normal skin,
+    charged skin, reference).
+  - The Source_And_Offline_Tests ZIP holds the full editable source, the tests, reference art and
+    creeper_forge/ (the model/texture generator, including the hybrid-plant generator). The
+    One_Run builder rebuilds the packs from that ZIP.
+
+15 OPEN BLOCKERS
+  - No Minecraft session: every gameplay claim above is unverified.
+  - Vanilla villager trades: NEEDS DECISION (see 07).
+  - Not started: AI/attack overhaul (03), transport repairs (04), ecology expansion (05),
+    nests/story expansion (06), new automation modes (07), infection visual tuning (08).

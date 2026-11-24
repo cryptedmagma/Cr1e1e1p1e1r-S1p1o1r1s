@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cookiedookie.walk_trail": {
+      "loop": true,
+      "animation_length": 0.15,
+      "particle_effects": {
+        "0.0": {
+          "effect": "trail",
+          "locator": "trail"
+        }
+      }
+    },
+    "animation.cookiedookie.orbit_particles": {
+      "loop": true,
+      "animation_length": 1.0,
+      "particle_effects": {
+        "0.0": {
+          "effect": "orbit",
+          "locator": "orbit"
+        }
+      }
+    }
+  }
+}

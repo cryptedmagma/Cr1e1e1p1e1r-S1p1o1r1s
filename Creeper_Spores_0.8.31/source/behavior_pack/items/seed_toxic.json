@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cookiedookie:seed_toxic",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "cookiedookie:seed_toxic"
+        }
+      },
+      "minecraft:custom_components": [
+        "cookiedookie:seed"
+      ]
+    }
+  }
+}

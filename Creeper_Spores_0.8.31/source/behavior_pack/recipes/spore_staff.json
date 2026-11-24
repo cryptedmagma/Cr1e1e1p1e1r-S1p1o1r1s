@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cookiedookie:recipe_spore_staff"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  E",
+      " S ",
+      "S  "
+    ],
+    "key": {
+      "E": {
+        "item": "cookiedookie:luminous_shard"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "cookiedookie:spore_staff",
+      "count": 1
+    }
+  }
+}

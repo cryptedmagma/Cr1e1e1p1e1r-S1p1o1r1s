@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cookiedookie:flower_creeper",
+      "materials": {
+        "default": "creeper"
+      },
+      "textures": {
+        "default": "textures/entity/cookiedookie/flower_creeper",
+        "charged": "textures/entity/cookiedookie/flower_creeper_charged",
+        "alt": "textures/entity/cookiedookie/flower_creeper_alt",
+        "alt_charged": "textures/entity/cookiedookie/flower_creeper_alt_charged"
+      },
+      "geometry": {
+        "default": "geometry.cookiedookie.flower_creeper"
+      },
+      "animations": {
+        "legs": "animation.creeper.legs",
+        "idle_ambient": "animation.cookiedookie.flower.breathing",
+        "walk_trail": "animation.cookiedookie.walk_trail"
+      },
+      "scripts": {
+        "animate": [
+          "legs",
+          "idle_ambient",
+          {
+            "walk_trail": "query.modified_move_speed > 0.05"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cookiedookie_creeper"
+      ],
+      "spawn_egg": {
+        "base_color": "#e88ab8",
+        "overlay_color": "#fff0a0"
+      },
+      "particle_effects": {
+        "trail": "cookiedookie:cs_trail_flower"
+      }
+    }
+  }
+}

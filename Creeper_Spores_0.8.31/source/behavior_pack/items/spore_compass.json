@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cookiedookie:spore_compass",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "cookiedookie:spore_compass"
+        }
+      },
+      "minecraft:custom_components": [
+        "cookiedookie:compass"
+      ]
+    }
+  }
+}

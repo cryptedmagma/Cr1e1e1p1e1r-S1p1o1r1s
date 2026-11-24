@@ -1,0 +1,93 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cookiedookie:spore_bogcap",
+      "menu_category": {
+        "category": "nature"
+      },
+      "states": {
+        "cookiedookie:age": {
+          "values": {
+            "min": 0,
+            "max": 3
+          }
+        },
+        "cookiedookie:pollinated": [
+          false,
+          true
+        ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('cookiedookie:age') == 0",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.spore_bogcap.age_0"
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('cookiedookie:age') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.spore_bogcap.age_1"
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('cookiedookie:age') == 2",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.spore_bogcap.age_2"
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('cookiedookie:age') == 3",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.spore_bogcap.age_3"
+          }
+        }
+      }
+    ],
+    "components": {
+      "cookiedookie:spore_bogcap": {},
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [
+          -6,
+          0,
+          -6
+        ],
+        "size": [
+          12,
+          14,
+          12
+        ]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cookiedookie:spore_bogcap",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.4
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.3
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          40,
+          80
+        ],
+        "looping": true
+      },
+      "minecraft:map_color": "#538d55"
+    }
+  }
+}

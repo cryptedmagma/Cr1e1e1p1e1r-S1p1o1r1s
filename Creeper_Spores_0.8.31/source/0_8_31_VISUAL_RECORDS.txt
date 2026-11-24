@@ -1,0 +1,201 @@
+CREEPER SPORES 0.8.31 - PER-VARIANT VISUAL ACCEPTANCE RECORDS
+
+Each image in visual_records/<variant>.png shows: [normal skin] [charged skin] [reference art].
+Renders: Blockbench 5.2.2 desktop, Bedrock Entity format, offscreen view. Blockbench does not show
+emissive glow, and its lighting differs from Minecraft. STATUS for every variant: PREVIEWED in
+Blockbench; NOT YET SEEN IN MINECRAFT. Approval is per variant and still yours to give.
+Hashes are the first 16 hex digits of SHA-256.
+Exception (2026-11-23): Swamp, Crystal, Jungle, Lava, Thorn and Spore Queen were fully redone while Blockbench was
+not running; their records are drawn by _previews/softrender.py (same front-left camera, checked against an earlier
+Blockbench render of the same model, flat shading, no glow). Reopen them in Blockbench to confirm before approving.
+Particle trails and orbits cannot be previewed in Blockbench; they show only in Minecraft.
+
+MOSS (cookiedookie:moss_creeper)
+  reference   reference_art/01_Moss_Creeper.png  fad4dca4b0784deb
+  geometry    models/entity/moss_creeper.geo.json  df2ad41dfa473528
+  textures    normal 39097bb684f5daea  alt c3c546bdbe3c91f8  charged 83042fff5e0509c4  alt_charged c5c4fc45e0c3d452
+  material    creeper
+  render      visual_records/moss.png
+  notes       Close. Moss mat, hanging strands, daisies on head and feet. Ref moss strands are longer and denser.
+
+CAVE (cookiedookie:cave_creeper)
+  reference   reference_art/02_Cave_Creeper.png  4458980259e15dfc
+  geometry    models/entity/cave_creeper.geo.json  13d7d71bb5c999e0
+  textures    normal 833f352e933a0881  alt 172545200142f410  charged 7eb01f245dfa60ac  alt_charged 0ab31e7d1f56ad35
+  material    entity_emissive_alpha
+  render      visual_records/cave.png
+  notes       Stalagmites on head and feet, glowing ore spots. Ref has a glowing seam on the head side; ours is spots.
+
+CRYSTAL (cookiedookie:crystal_creeper)
+  reference   reference_art/03_Crystal_Creeper.png  3867d654bdaf65b9
+  geometry    models/entity/crystal_creeper.geo.json  883c490bcfcb984e
+  textures    normal 89aae724859546ad  alt 5d6acdd199b8b9c4  charged 29bd8101ca385bb9  alt_charged 8b79831cac942fd4
+  material    entity_emissive_alpha
+  render      visual_records/crystal.png
+  notes       Full redo 2026-11-23: lavender amethyst stone with purple mottling; asymmetric connected clusters on the head (central crown with the tallest crystal, a bigger right fan, small left fan kept low so the face reads, rear fan), each crystal a shaft with a two-step point and a root collar against the head; big clusters at the front feet, smaller at the back. Body, head and feet proportions unchanged. Offline software render (Blockbench was not running).
+
+SWAMP (cookiedookie:swamp_creeper)
+  reference   reference_art/04_Swamp_Creeper.png  96abede168ad4660
+  geometry    models/entity/swamp_creeper.geo.json  82ac1c02df6ca7cd
+  textures    normal f36db819722b9cdc  alt 149849d6b367dc1f  charged 99db468a7ac0d615  alt_charged 7955dc9e0d922d27
+  material    creeper
+  render      visual_records/swamp.png
+  notes       Full redo 2026-11-23 against the reference and the owner's protection-registry target: one irregular broad lily-pad crown (main disc, bigger right lobe, rear overhang, notch at the front, dark rim, radial veins, dark underside); a raised white lotus (green base and stem, outer and inner white/blush petals, golden centre); moss hanging from the pad rim with the front fringe kept short over the eyes, long side strands and algae on the back of the head; square muddy head with forehead mud and a shadow under the pad; cattails by the left foot, reeds by the right foot, feet in swamp water. Offline software render (Blockbench was not running).
+
+DESERT (cookiedookie:desert_creeper)
+  reference   reference_art/05_Desert_Creeper.png  0ec747e122846edb
+  geometry    models/entity/desert_creeper.geo.json  dc81dc8522098e4c
+  textures    normal ec8c658fc3589f63  alt 53c3279d5c43fc54  charged d0b0c0a30a664a25  alt_charged 2f19fea7f619509d
+  material    creeper
+  render      visual_records/desert.png
+  notes       Cactus with bloom, rope coils, dead-bush twig on front-left foot. Close.
+
+SNOW (cookiedookie:snow_creeper)
+  reference   reference_art/06_Snow_Creeper.png  da5720c4f5e81df4
+  geometry    models/entity/snow_creeper.geo.json  de2ffd74659de590
+  textures    normal b2ebc1fb69e7f235  alt 049f6303982bbe7f  charged 2972b0ff71ecce2d  alt_charged 955e0545634e0bfc
+  material    creeper
+  render      visual_records/snow.png
+  notes       Snow cap with drips, icicles, ice spikes, snowy feet. Ref icicles are longer.
+
+JUNGLE (cookiedookie:jungle_creeper)
+  reference   reference_art/07_Jungle_Creeper.png  a742b3bba379dbe3
+  geometry    models/entity/jungle_creeper.geo.json  5aab4a5ede87d9ad
+  textures    normal e8420fe5a45d7cba  alt bf066e5e25c0dd09  charged 16c18217a4e77922  alt_charged cec791795d881b13
+  material    creeper
+  render      visual_records/jungle.png
+  notes       Full redo 2026-11-23: wide tropical umbrella canopy (rounded top leaf mass, broad arching leaves front-left, front-right, both sides and a rear fan, an upper tier, a long hanging leaf at the back) with a short visor so the eyes stay open and a shadow under it; one large red hibiscus at the top-right corner on its stem; long vines on the left, shorter on the right; vines spiralling the bark stalk; leafy belt at the waist; roots over every foot. Offline software render (Blockbench was not running).
+
+MUSHROOM (cookiedookie:mushroom_creeper)
+  reference   reference_art/08_Mushroom_Creeper.png  c55dee420ff43955
+  geometry    models/entity/mushroom_creeper.geo.json  828e1d4c39a7c13a
+  textures    normal ffb2b59f16e8037b  alt c413a15fe05c3555  charged 91dbbafa9fb286b6  alt_charged 087e4e647d29a3a6
+  material    creeper
+  particles   cookiedookie:cs_trail_mushroom
+  render      visual_records/mushroom.png
+  notes       Spotted red cap, pale stem, one small mushroom on its side. Foot mushrooms removed: it now leaves a trail of tiny toadstools while walking. Ref cap is more domed.
+
+SCULK (cookiedookie:sculk_creeper)
+  reference   reference_art/09_Sculk_Creeper.png  31b0a291fe69f7d5
+  geometry    models/entity/sculk_creeper.geo.json  0604ea99459e8d94
+  textures    normal 6c7b3133ef3b1fdf  alt 4f58ea2a658c5150  charged d6f89d1ca6b112a4  alt_charged bc0721b984b50afe
+  material    entity_emissive_alpha
+  render      visual_records/sculk.png
+  notes       Glowing cyan seams and tendrils, floating motes. Close.
+
+NETHER (cookiedookie:nether_creeper)
+  reference   reference_art/10_Nether_Creeper.png  1da7f79ac5f7e0a0
+  geometry    models/entity/nether_creeper.geo.json  d7355c0551efe9ae
+  textures    normal 379d8fb8b89dd4fa  alt 63a6b64ac89af906  charged 5afca142eb127f8d  alt_charged 2a4eccd0c0e2c360
+  material    entity_emissive_alpha
+  render      visual_records/nether.png
+  notes       Netherrack with glowing cracks, crimson coral spikes, embers. Close.
+
+END (cookiedookie:end_creeper)
+  reference   reference_art/11_End_Creeper.png  e914446215c8c08e
+  geometry    models/entity/end_creeper.geo.json  34272b2387d0a5d9
+  textures    normal e98361504336f107  alt b9fcc4f6b8c6e679  charged 5dc7a913c5ab2e1c  alt_charged a3289ae7ad7c00e5
+  material    entity_emissive_alpha
+  render      visual_records/end.png
+  notes       End stone with glowing purple veins, curled horns, floating motes. Close.
+
+WATER (cookiedookie:water_creeper)
+  reference   visual_records/water_reference_0.8.31.png  8ad79470391ecf28
+  geometry    models/entity/water_creeper.geo.json  55c510793c8f6d75
+  textures    normal 7ad92da0409424ea  alt bfef627291dfafd3  charged 834226bb40d86de8  alt_charged 5dc1a89bbcbd732e
+  material    entity_emissive_alpha
+  particles   cookiedookie:cs_orbit_bubbles, cookiedookie:cs_trail_water
+  render      visual_records/water.png
+  notes       Fully redrawn from the owner's lily-pad reference (visual_records/water_reference_0.8.31.png): bright green creeper wading in water, water climbing the legs and a glowing diagonal stream across the body, big thick notched lily pad hat with a chunky pink water lily. Walking leaves lily pads on the ground (about one in three with a flower); about four bubbles pop in around it, drift and fade. Old blue body, seaweed and bubble blocks removed.
+
+LAVA (cookiedookie:lava_creeper)
+  reference   reference_art/13_Lava_Creeper.png  714f60b37552e5af
+  geometry    models/entity/lava_creeper.geo.json  8a683e44bdeca7a2
+  textures    normal c80f10ff7c71568f  alt 3e3490b237545ac8  charged deec0c1eba90ef92  alt_charged f813e8cb0b756ea4
+  material    entity_emissive_alpha
+  particles   cookiedookie:cs_trail_lava
+  render      visual_records/lava.png
+  notes       Full redo 2026-11-23: heavy dark basalt head with a plain forehead; molten crown fused to the top (left lobe, centre ridge, tall right lobe leaning back-right, rear crown, sparks); a drip between the eyes; lava streams down both cheeks; molten neck joint; sparser connected magma seams with two torso fissures; glowing front-leg junctions; feet standing in their own glow. Ember trail while walking. Offline software render (Blockbench was not running).
+
+FLOWER (cookiedookie:flower_creeper)
+  reference   reference_art/14_Flower_Creeper.png  bad4683d66e44323
+  geometry    models/entity/flower_creeper.geo.json  9a5e3fdbaaf61e4f
+  textures    normal 77b0ebc251e6075e  alt c76d93d5521c7fa0  charged e5778de73b8d2ae0  alt_charged efb39edd7a3b2659
+  material    creeper
+  particles   cookiedookie:cs_trail_flower
+  render      visual_records/flower.png
+  notes       Pixel blossoms on crown, chest and feet. Crown wreath is sparser than the ref. Leaves a trail of pink and white petals while walking.
+
+THORN (cookiedookie:thorn_creeper)
+  reference   reference_art/15_Thorn_Creeper.png  6c9f8854d8ba10c2
+  geometry    models/entity/thorn_creeper.geo.json  d9fedd479321bc03
+  textures    normal 51c8dbcce06c16b5  alt d52c8c0e61b6541a  charged da2d84ec177e1bb1  alt_charged 16dbef92f5603977
+  material    creeper
+  render      visual_records/thorn.png
+  notes       Full redo 2026-11-23 keeping the protected head block and face pixel-for-pixel: braided thorny wreath with leaves, long unevenly tapered ivory thorns radiating out with clear gaps (none in front of the face), forward-stepping bark stalk with vines spiralling round it, flank thorns, roots running from the stalk into mossy bark feet, thorns on the back feet. Offline software render (Blockbench was not running).
+
+PHANTOM (cookiedookie:phantom_creeper)
+  reference   reference_art/16_Phantom_Creeper.png  959d47a344482c4f
+  geometry    models/entity/phantom_creeper.geo.json  8bbb15b4b3ac84ef
+  textures    normal a88b2850a57667d1  alt 784d1e72decac026  charged 3096965781751385  alt_charged 873b8e7d30a32c2f
+  material    creeper
+  render      visual_records/phantom.png
+  notes       Ragged wing panels from the shoulders, crown wisps. FURTHEST FROM REF: ref wings are larger, higher and more swept.
+
+GIANT (cookiedookie:giant_creeper)
+  reference   reference_art/17_Giant_Creeper.png  22e7372e9fd71e04
+  geometry    models/entity/giant_creeper.geo.json  66ce3f895cc3289b
+  textures    normal f079e3cee454dcf7  alt c0e895d808cd6ec4  charged c9c4ebee3dc94c50  alt_charged beeb97aa11f5d875
+  material    creeper
+  render      visual_records/giant.png
+  notes       Green/beige blotches, lime moss tufts and drips. Size comes from entity scale (unchanged).
+
+MINIATURE (cookiedookie:miniature_creeper)
+  reference   reference_art/18_Miniature_Creeper.png  dff232cf67fd936f
+  geometry    models/entity/miniature_creeper.geo.json  8fbf979b891c8bb7
+  textures    normal 3af725a4c1d7c423  alt 9049e2e9507cb92c  charged 2d156e59dfa416f1  alt_charged 7d855e67cbcf5acf
+  material    creeper
+  render      visual_records/miniature.png
+  notes       Classic green creeper skin. Size comes from entity scale (unchanged).
+
+GLOWING (cookiedookie:glowing_creeper)
+  reference   reference_art/19_Glowing_Creeper.png  b70e84e09faa9fa1
+  geometry    models/entity/glowing_creeper.geo.json  73b3e7b8d4243989
+  textures    normal 59632c41b514e66a  alt a953a575e31d247c  charged 0a6bbd40f114ed1b  alt_charged 4c89ebf391dc2389
+  material    entity_emissive_alpha
+  particles   cookiedookie:cs_trail_glowing
+  render      visual_records/glowing.png
+  notes       Dark green body with neon blotches. Floating glow cubes removed: it now leaves a rising trail of glowing motes while walking. Glow is in-game only.
+
+SPORE QUEEN (cookiedookie:spore_queen_creeper)
+  reference   reference_art/20_Spore_Queen_Creeper.png  194dd5531376fdb9
+  geometry    models/entity/spore_queen_creeper.geo.json  42a7d3a1bf859216
+  textures    normal c4c2aee9bf8f647b  alt 410b5d14f690615c  charged 6ac4471dc63c4847  alt_charged 990418fdb03bb263
+  material    entity_emissive_alpha
+  particles   cookiedookie:cs_trail_spore_queen
+  render      visual_records/spore_queen.png
+  notes       Full redo 2026-11-23 keeping the protected draped gown and the cream toes with foot moss pixel-for-pixel: broad rounded peach cap with six separate scalloped lobes, three tiers to a raised mossy centre with a tiny mushroom, purple-pink frill and purple gills underneath, hooked spore tendrils from the rim, a soft shadow over the face, a frill ring where cap meets head, small pink mushrooms at her feet, glowing spores. Spore trail while walking. Offline software render (Blockbench was not running).
+
+GRASS CROWN (cookiedookie:grass_crown_creeper)
+  reference   reference_art/21_Grass_Crown_Creeper.png  448056f360a6a65c
+  geometry    models/entity/grass_crown_creeper.geo.json  f48cd58a5c36bba3
+  textures    normal 57a51426bdb5a9a2  alt 7486f0fea52e4df3  charged 28b93ca5c0678d66  alt_charged fc7aabdd774f1026
+  material    creeper
+  render      visual_records/grass_crown.png
+  notes       Skull face, vertebrae, dark hat brim, tall grass crown. Close.
+
+CARVED WOOD (cookiedookie:carved_wood_creeper)
+  reference   reference_art/22_Carved_Wood_Creeper.png  75d531411a0ca279
+  geometry    models/entity/carved_wood_creeper.geo.json  3a3564c8dac40891
+  textures    normal 1e71aeb1f4426b39  alt 9d4335578ca687eb  charged c89712f0c47c0fc5  alt_charged c4c3d7fc589ec425
+  material    creeper
+  render      visual_records/carved_wood.png
+  notes       Redrawn from the reference: three tall terracotta-wood blocks split by flush dark grooves (X over eyes / small cute face / carved panel with eyes), tilted collar, taller split cobblestone feet.
+
+SLENDER GREEN (cookiedookie:slender_green_creeper)
+  reference   reference_art/bamboo.png  587bfccaa4c78c31
+  geometry    models/entity/slender_green_creeper.geo.json  2bd89dc5cc5044c5
+  textures    normal d221ea043e233bd1  alt 9de5d2389c621059  charged 2fafac35e824ef44  alt_charged 4848507324e272c7
+  material    creeper
+  render      visual_records/slender_green.png
+  notes       Redrawn from the bamboo reference: bamboo-block head with two dark eyes set low and to the left, thin streaked stalk with bright pale node rings and side nubs, lumpy rooted foot.

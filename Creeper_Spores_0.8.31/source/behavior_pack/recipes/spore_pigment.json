@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cookiedookie:recipe_spore_pigment"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " G ",
+      " E ",
+      " D "
+    ],
+    "key": {
+      "G": {
+        "item": "cookiedookie:spore_extract"
+      },
+      "E": {
+        "item": "minecraft:glow_ink_sac"
+      },
+      "D": {
+        "item": "minecraft:green_dye"
+      }
+    },
+    "result": {
+      "item": "cookiedookie:spore_pigment",
+      "count": 1
+    }
+  }
+}
